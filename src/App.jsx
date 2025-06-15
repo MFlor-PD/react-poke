@@ -28,6 +28,7 @@ function App () {
   
   return (
   <>
+  <div className="poke-container">
     <h1>Get the Pokemon</h1>
     <form onSubmit={handlerSubmit} className="poke-form">
       <label htmlFor="pokemon">Pokemon Name</label>
@@ -41,7 +42,7 @@ function App () {
       />
       <button type="submit">Get Pokemon</button>
     </form>
-
+    </div>
     {error && <p style={{ color: 'red' }}>{error}</p>}
 
     {pokemonData && (
