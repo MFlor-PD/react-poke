@@ -1,9 +1,35 @@
+:root {
+  --primary-color: #61dafb;
+  --primary-dark: #21a1f1;
+  --text-color: #333;
+  --error-color: red;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: var(--font-family);
+  color: var(--text-color);
 }
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+p[style*="color: red"] {
+  font-weight: 600;
+}
+
 
 .logo {
   height: 6em;
@@ -40,3 +66,87 @@
 .read-the-docs {
   color: #888;
 }
+
+.poke-container {
+  max-width: 320px;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.poke-container h1 {
+  margin-top: 0.5rem; 
+  margin-bottom: 2rem; 
+}
+.poke-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 0 auto 2rem auto;
+  text-align: left;
+}
+
+.poke-form label {
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.poke-form input {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 2px solid #61dafb;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.poke-container input::placeholder {
+  text-align: center;
+}
+
+.poke-form input:focus {
+  border-color: #21a1f1;
+}
+
+
+.pokemon-info {
+  max-width: 350px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #61dafb 0%, #21a1f1 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(33, 161, 241, 0.4);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pokemon-info h2 {
+  text-transform: capitalize;
+  margin-bottom: 12px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.pokemon-info img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 12px;
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.pokemon-info p {
+  font-size: 1.1rem;
+  margin: 4px 0;
+}
+
+
+

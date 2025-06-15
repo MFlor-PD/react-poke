@@ -45,6 +45,7 @@ function App () {
 
   return (
     <>
+      <div className='poke-container'>
       <h1>Get the Pokemon</h1>
       <form className="poke-form" onSubmit={(e) => e.preventDefault()}>
         <label htmlFor="pokemon">Pokemon Name</label>
@@ -58,7 +59,7 @@ function App () {
           autoComplete="off"
         />
       </form>
-
+      </div>
       {loading && <p>Loading...</p>}
       {error && <p style={{ color: 'red' }}>{error}</p>}
 
