@@ -1,9 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/',  // <-- esta línea es clave para GitHub Pages
+  base: '/react-poke/',  // importante para que Vite genere rutas correctas en producción
   plugins: [react()],
 })
-
